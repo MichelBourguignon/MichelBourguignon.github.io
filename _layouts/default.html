@@ -11,11 +11,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     <style type="text/css" media="screen">
-      img {
+      img .logo {
+          border-radius:50px;
+          border-width:medium;
+          border-color:black;
+      }
+      img .icon {
         width: 15px;
-        border-radius:50px;
-        border-width:medium;
-        border-color:black;
         text-align: center;
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%);
@@ -27,7 +29,7 @@
       <header>
 
         {% if site.logo %}
-          <a href="https://www.michelbourguignon.fr"><img src="{{site.logo | relative_url}}" alt="Logo" style="border-radius: 50%" /></a>
+          <a href="https://www.michelbourguignon.fr"><img src="{{site.logo | relative_url}}" alt="Logo" class="logo" /></a>
         {% endif %}
 
         <p style="text-align: justify; text-justify: inter-word;">

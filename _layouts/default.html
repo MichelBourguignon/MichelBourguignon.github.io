@@ -11,17 +11,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body style="font-family: 'Inconsolata', monospace;">
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-        
+
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+          <a href="https://www.michelbourguignon.fr"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-
+        <p style="text-align: justify; text-justify: inter-word;">
+          {{ site.description | default: site.github.project_tagline }}
+        </p>
       </header>
       <section>
 
@@ -29,8 +29,10 @@
 
       </section>
       <footer>
+        <p>Copyright: <a href="https://www.michelbourguignon.fr">Michel Bourguignon</a></p>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script type="text/javascript" src="https://devjourney.info/js/getquote.js"></script>
   </body>
 </html>
